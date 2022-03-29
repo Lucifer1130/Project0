@@ -1,0 +1,153 @@
+/* Add a black background color to the top navigation */
+.top {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .top a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .top a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .top a.h{
+    background-color:darkcyan;
+    color: white;
+  }
+ /* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#Content{
+  top: 70px;
+  background-color:rgb(60, 63, 63);
+}
+
+#blog {
+  top: 140px;
+  background-color:rgb(60, 63, 63); /* Blue */
+}
+#gg{
+  top: 210px;
+  background-color: rgb(60, 63, 63);
+}
+
+#contact {
+  top: 280px;
+  background-color:rgb(60, 63, 63)/* Light Black */
+}
+.bg-img {
+  background-image: url("https://images.unsplash.com/photo-1612405199572-aa74dfbad7d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80");
+
+  min-height: 720px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color:black;
+}
+h2{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  font-size: 70px;
+  font-style: italic;
+  color:black;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dm {
+  background-color: black;
+  color: white;
+}
+.rightside {
+  float:right;
+  margin-right: 55px;
+}
+.leftside {
+  float:left;
+  margin-left:95px;
+}
+.cards1 {
+      width:200px ;
+      height: 350px;
+      margin:auto ;
+}
+.back-side
+{
+background-color: wheat;
+color:darkcyan;
+transform: rotateY(180deg);
+z-index: 1;
+}
+.back-side .back-header{
+  text-align: center;
+  height: 45%;
+}
+.card-inner{
+  position: relative;
+  height: 100% ;
+  transition:transform 0.6s ;
+  transform-style:preserve-3d ;
+}
+.back-side ,.front-side{
+  position: absolute;
+  width: 300px;
+  height:300px;
+  backface-visibility: hidden;
+}
+.cards1:hover .card-inner{
+        transform:rotateY(180deg);
+}
+.front-side img{
+  height: 200px;
+  width: 300px;
+}
+#pp{
+  width:400px;
+  height:200px;
+}

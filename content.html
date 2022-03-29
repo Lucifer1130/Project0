@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Content</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: rgb(0, 30, 37);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+.course{
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+.course a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.course a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.course a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ /* Add a black background color to the top navigation */
+ .top {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.top a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.top a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.top a.h{
+  background-color:darkcyan;
+  color: white;
+}
+
+footer {
+  background-color: rgb(0, 30, 37);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+h3{
+  font-style: italic;
+  color-interpolation-filters: sRGB;
+}
+
+.container{
+
+  position: relative;
+  min-height: 100vh;
+  background: #ddd;
+}
+
+.container h3{
+
+  font-size: 40px;
+  font-weight: normal;
+  padding: 15px;
+  text-transform: capitalize;
+  text-align: center;
+  color:black;  
+}
+.container .img-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+  padding:10px;
+  justify-content: center;
+}
+.container .img-container .image{
+
+  height: 250px;
+  width:350px;
+  border:10px solid #fff;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+}
+.container .img-container .image img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  transform: .2s linear;
+}
+.container .img-container .image:hover img{
+  transform: scale(1.1);
+}
+.container .popup-img{
+  position: fixed;
+  top:0; left:0;
+  background: rgba(0,0,0,.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container .popup-img span{
+  position: absolute;
+  top: 0px; right: 10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color:#fff;
+  cursor:pointer;
+  z-index: 100;
+}
+.container .popup-img img{
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width:750px;
+  object-fit: cover;
+}
+@media (max-width:768px){
+  .container .popup-img img{
+    width:95%;
+  }
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="top">
+          <a href="home.html" class="h">Home</a> 
+          <a href="about.html">About</a>
+          <a href="login_1.html">Register</a>
+       </div>
+   </header>
+
+<h1>
+  t_Learning
+</h1>
+
+<section>
+  <div class="course">
+    <p>Artificial Intelligence</p>  
+</div>
+  
+  <article>
+    <h2>Machine+Intelligence!</h2>
+    <p>Artificial intelligence leverages computers and machines to mimic 
+    the problem-solving and decision-making capabilities of the human mind.<br>
+    At its simplest form, artificial intelligence is a field, which combines 
+    computer science and robust datasets, to enable problem-solving. It also
+    encompasses sub-fields of machine learning and deep learning, which are 
+    frequently mentioned in conjunction with artificial intelligence. These
+    disciplines are comprised of AI algorithms which seek to create expert 
+    systems which make predictions or classifications based on input data.<br></p>
+    <p>
+        Today, a lot of hype still surrounds AI development, which is expected
+        of any new emerging technology in the market. As noted in Gartner’s hype 
+        cycle (link resides outside IBM), product innovations like, self-driving 
+        cars and personal assistants, follow “a typical progression of innovation, 
+        from overenthusiasm through a period of disillusionment to an eventual 
+        understanding of the innovation’s relevance and role in a market or domain.”
+    </p>
+    <p>
+      Machine learning enables a computer system to make predictions or take some
+      decisions using historical data without being explicitly programmed. Machine
+      learning uses a massive amount of structured and semi-structured data so that
+      a machine learning model can generate accurate result or give predictions based 
+      on that data.<br>
+
+    Machine learning works on algorithm which learn by it?s own using historical data. 
+    It works only for specific domains such as if we are creating a machine learning model
+    to detect pictures of dogs, it will only give result for dog images, but if we provide a 
+    new data like cat image then it will become unresponsive. Machine learning is being used in
+    various places such as for online recommender system, for Google search algorithms, Email spam 
+    filter, Facebook Auto friend tagging suggestion, etc.
+    </p>
+
+  <h3>ML</h3>
+  <div class="container"><div class="img-container">
+    <div>
+      <img class="image" src="https://www.readspeaker.ai/wp-content/uploads/2021/05/deep-learning-vs-machine-learning-readspeaker-840x400.jpg">
+    <p>Hierarcy</p>
+    </div>
+    <div>
+    <img class="image" src="https://cdn.ttgtmedia.com/rms/onlineImages/business_analytics-machine_learning_process_mobile.jpg" alt="i2">
+    <p>Process of ML</p>
+    </div>
+    <div>
+      <img class="image" src="https://qph.fs.quoracdn.net/main-qimg-220b49a6aa9c221f5d44877ad1f6dfd7" alt="i3">
+      <p>Math skills needed</p>
+    </div>
+    <div>
+      <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOS6K8MU7vUTwsr3qJOaA65r88DKNoQ35HA&usqp=CAU" alt="i4">
+      <p>Steps towards learning</p>
+    </div>
+    <div>
+      <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulizjoCvcETV2mLWm9WcZ0mlsl-MjY0B7RQ&usqp=CAU" alt="i5">
+      <p>Types</p>
+    </div>
+    </div>
+    <div class="popup-img">
+      <span>&times;</span>
+      <img src="https://www.readspeaker.ai/wp-content/uploads/2021/05/deep-learning-vs-machine-learning-readspeaker-840x400.jpg" alt="aa">
+      
+    </div>
+  </div>
+
+    </article>
+</section>
+
+<footer>
+  <p>Thanks</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.container img').forEach(image=>{
+    image.onclick=() =>
+    document.querySelector('.pop-img').style.display ='block';
+  });
+</script>
+</body>
+</html>

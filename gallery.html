@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+   * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+img{
+    width: 100%;
+}
+
+.gallery img:hover {
+        filter: drop-shadow(4px 4px 6px gray);
+        transform: scale(1.1);
+    }
+
+    body{
+      background-color: #666;
+    }
+.top {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .top a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .top a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .top a.h{
+    background-color:darkcyan;
+    color: white;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="top">
+              <a href="home.html" class="h">Home</a> 
+              <a href="about.html">About</a>
+              <a href="login (1).html">Register</a>
+           </div>
+    </header>
+
+    <div class="header" id="myHeader">
+        <h1>Images realted to every topics.</h1>
+        <p>Click on the button.</p>
+        <button class="btn" onclick="four()">OPEN</button>
+    </div>
+    <div class="gallery">
+<div class="row">
+    <div class="column">
+      <img src= "https://d37c7ubwjknfep.cloudfront.net/wp-content/uploads/2018/09/5-marketing-concepts1.jpg">
+      <img src="https://image.slidesharecdn.com/digitalmarketing-150817092044-lva1-app6892/95/digital-marketing-small-concept-8-638.jpg?cb=1439803298">
+      <img src="https://image.slidesharecdn.com/digitalmarketingfundamentals-170503103011/95/digital-marketing-fundamentals-concept-57-638.jpg?cb=1493807625">
+      <img src="https://www.digitalnest.in/wp-content/uploads/2017/10/digitalnest-course-1-529x529.png">
+    </div>
+    <div class="column">
+      <img src="https://www.thebalancesmb.com/thmb/8Wt696ftH8V_mC2ksBvdcyvzmQ4=/950x0/filters:max_bytes(150000):strip_icc():format(webp)/the-network-marketing-business-model-is-it-right-for-you-3515493-FINAL-5bdb53dbc9e77c0026cb4f73.png">
+      <img src="https://c8.alamy.com/comp/P23WYJ/network-marketing-word-cloud-concept-on-white-background-P23WYJ.jpg">
+      <img src="https://slideplayer.com/slide/12955560/79/images/4/Views+of+world+known+People+about.jpg">
+      <img src="https://images.appypie.com/wp-content/uploads/2019/12/19180828/Types-of-Network-Marketing.png">
+    </div>
+    <div class="column">
+    <img src="https://www.crushpixel.com/big-static19/preview4/international-assets-issues-onboarding-mobile-3216727.jpg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gVNuQ3E7A9snJMZZvwFtxxJ-gTylGqrAnw&usqp=CAU">
+      <img src="https://www.kotaksecurities.com/resources/images/market-related-concepts/quotes3.jpg">
+      <img src="https://www.kotaksecurities.com/resources/images/market-related-concepts/quotes6.jpg">
+      <img src="https://thumbs.dreamstime.com/z/word-cloud-stock-market-related-items-82181952.jpg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AfSn3kLGairYam4WfYDLtjrf_f980BTNiw&usqp=CAU">
+    </div>
+    <div class="column">
+    <img src="https://comps.canstockphoto.com/business-consulting-stock-market-image_csp30420778.jpg">
+      <img src="https://femina.wwmindia.com/content/2020/jul/benefits-of-eLearning-infographics-1596092811.jpg">
+      <img src="https://www.guide2research.com/wp-content/uploads/2020/06/value-of-elearning-market.jpg">
+      <img src="https://mms.businesswire.com/media/20201203005831/en/844054/23/IRTNTR44577.jpg">
+    </div>
+</div>
+    </div>
+</body>
+<script>
+    // Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+    function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+</html>
+
